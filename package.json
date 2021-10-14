@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My up-to-date portfolio",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diana-Deluvian/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "resume"
+  ],
+  "author": "Diana Deluvian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diana-Deluvian/portfolio/issues"
+  },
+  "homepage": "https://github.com/Diana-Deluvian/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
