@@ -7,3 +7,11 @@ $medium-color: #ccc;
 $dark-color: #333;
 
 $bg-image: ("../img/showcase,jpg");
+
+@function set-text-color($solor) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
