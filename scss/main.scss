@@ -85,6 +85,9 @@ img {
   }
 
   &-inner {
+    background: $dark-color;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
@@ -175,6 +178,103 @@ img {
           .process-step {
             background-color: $dark-color;
           }
+        }
+      }
+    }
+  }
+}
+
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
+      grid-gap: 1.2rem;
+    }
+    .bio-image {
+      grid-area: bioimage;
+    }
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+
+    .award-1 {
+      grid-area: aw1;
+    }
+    .award-2 {
+      grid-area: aw2;
+    }
+    .award-3 {
+      grid-area: aw3;
+    }
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.3rem;
+
+      div {
+        height: 100%;
+        color: white;
+        text-align: center;
+        background-color: $main-color;
+      }
+    }
+  }
+
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  &-d {
+    .trivia {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.5rem;
+
+      p {
+        text-align: center;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        margin-top: 1rem;
+
+        p {
+          padding: 0.5rem;
+          border: 1px solid $medium-color;
+          border-radius: 5px;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
         }
       }
     }
