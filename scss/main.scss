@@ -82,6 +82,11 @@ img {
         font-size: 4rem;
         line-height: 1.2;
       }
+
+      .arrows {
+        display: none;
+        color: $main-color;
+      }
     }
   }
 
@@ -138,11 +143,18 @@ img {
   }
 
   &-c {
+    background-color: $light-color;
+    color: black;
     .process {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 1.5rem;
       text-align: center;
+      border-bottom: 20px solid transparent;
+
+      p {
+        font-size: 1.2rem;
+      }
 
       &-step {
         position: absolute;
@@ -179,6 +191,10 @@ img {
           .process-step {
             background-color: $dark-color;
           }
+
+          .process {
+            border: none;
+          }
         }
       }
     }
@@ -187,36 +203,24 @@ img {
 
 #about {
   &-a {
+    background-color: $dark-color;
+    color: $light-color;
     .about-info {
-      display: grid;
-      grid-template-areas:
-        "bioimage bio bio"
-        "aw1 aw2 aw3";
+      display: flex;
+      flex-direction: column;
       grid-gap: 1.2rem;
-    }
-    .bio-image {
-      grid-area: bioimage;
-    }
-    .bio {
-      grid-area: bio;
-      border-left: 3px solid $main-color;
-      padding: 0.8rem;
-    }
+      justify-content: center;
+      align-items: center;
 
-    .award-1 {
-      grid-area: aw1;
-    }
-    .award-2 {
-      grid-area: aw2;
-    }
-    .award-3 {
-      grid-area: aw3;
-    }
-    .award-1 .fas,
-    .award-2 .fas,
-    .award-3 .fas {
-      color: $main-color;
-      margin: 1rem;
+      p {
+        max-width: 60%;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      h4 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
     }
   }
 

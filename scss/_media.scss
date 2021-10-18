@@ -6,6 +6,14 @@
 
     .header-content {
       padding-top: 5rem;
+
+      .arrows {
+        display: block;
+      }
+
+      .btn-light {
+        display: none;
+      }
     }
   }
 }
@@ -13,9 +21,15 @@
 //smartphones
 
 @media (max-width: 500px) {
+  #header-home {
+  }
   #main-nav {
     flex-direction: column;
     align-items: center;
+
+    #logo {
+      display: none;
+    }
 
     li {
       padding: 1rem;
@@ -113,6 +127,14 @@
   #header-home {
     .header-content {
       padding-top: 3rem;
+
+      .arrows {
+        display: block;
+      }
+
+      .btn-light {
+        display: none;
+      }
     }
   }
 }

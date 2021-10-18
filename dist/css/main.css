@@ -217,6 +217,9 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+    #header-home .header-content .arrows {
+      display: none;
+      color: #ffbc00; }
 
 #header-inner {
   background: #333;
@@ -250,69 +253,66 @@ img {
   #home-b div:nth-child(even) {
     background-color: #ccc; }
 
-#home-c .process {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  text-align: center; }
-  #home-c .process-step {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 28px;
-    background: #ffbc00;
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
-    padding: 1rem;
-    transition: all 1s; }
-  #home-c .process-icon {
-    border-radius: 50%;
-    background: #333;
-    color: white;
-    padding: 2rem;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+#home-c {
+  background-color: #f4f4f4;
+  color: black; }
+  #home-c .process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
     text-align: center;
-    position: relative;
-    transition: all 1s; }
-    #home-c .process-icon:hover {
+    border-bottom: 20px solid transparent; }
+    #home-c .process p {
+      font-size: 1.2rem; }
+    #home-c .process-step {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 28px;
       background: #ffbc00;
-      width: 90px;
-      height: 90px;
-      line-height: 90px; }
-      #home-c .process-icon:hover .process-step {
-        background-color: #333; }
+      border-radius: 50%;
+      height: 15px;
+      width: 15px;
+      line-height: 15px;
+      padding: 1rem;
+      transition: all 1s; }
+    #home-c .process-icon {
+      border-radius: 50%;
+      background: #333;
+      color: white;
+      padding: 2rem;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      position: relative;
+      transition: all 1s; }
+      #home-c .process-icon:hover {
+        background: #ffbc00;
+        width: 90px;
+        height: 90px;
+        line-height: 90px; }
+        #home-c .process-icon:hover .process-step {
+          background-color: #333; }
+        #home-c .process-icon:hover .process {
+          border: none; }
 
-#about-a .about-info {
-  display: grid;
-  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
-  grid-gap: 1.2rem; }
-
-#about-a .bio-image {
-  grid-area: bioimage; }
-
-#about-a .bio {
-  grid-area: bio;
-  border-left: 3px solid #ffbc00;
-  padding: 0.8rem; }
-
-#about-a .award-1 {
-  grid-area: aw1; }
-
-#about-a .award-2 {
-  grid-area: aw2; }
-
-#about-a .award-3 {
-  grid-area: aw3; }
-
-#about-a .award-1 .fas,
-#about-a .award-2 .fas,
-#about-a .award-3 .fas {
-  color: #ffbc00;
-  margin: 1rem; }
+#about-a {
+  background-color: #333;
+  color: #f4f4f4; }
+  #about-a .about-info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.2rem;
+    justify-content: center;
+    align-items: center; }
+    #about-a .about-info p {
+      max-width: 60%;
+      font-size: 1.2rem;
+      margin-bottom: 1rem; }
+    #about-a .about-info h4 {
+      font-size: 1.4rem;
+      margin-top: 1rem; }
 
 #about-b .progress {
   overflow: hidden;
@@ -412,12 +412,18 @@ img {
   #header-home {
     height: 30rem; }
     #header-home .header-content {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+      #header-home .header-content .arrows {
+        display: block; }
+      #header-home .header-content .btn-light {
+        display: none; } }
 
 @media (max-width: 500px) {
   #main-nav {
     flex-direction: column;
     align-items: center; }
+    #main-nav #logo {
+      display: none; }
     #main-nav li {
       padding: 1rem; }
   #home-a .specials,
@@ -459,4 +465,8 @@ img {
 
 @media (max-height: 580px) {
   #header-home .header-content {
-    padding-top: 3rem; } }
+    padding-top: 3rem; }
+    #header-home .header-content .arrows {
+      display: block; }
+    #header-home .header-content .btn-light {
+      display: none; } }
