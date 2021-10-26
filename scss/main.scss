@@ -300,6 +300,9 @@ img {
 
 #contact {
   &-a {
+    .container {
+      max-width: 80%;
+    }
     .text-fields {
       display: grid;
       grid-template-areas:
@@ -308,6 +311,11 @@ img {
         "message message";
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
+
+      input,
+      textarea {
+        font-size: 1.2rem;
+      }
 
       .name-input {
         grid-area: name;
@@ -327,7 +335,7 @@ img {
 
       .message-input {
         grid-area: message;
-        height: 4rem;
+        height: 6rem;
       }
 
       .text-input {
@@ -336,6 +344,7 @@ img {
     }
     button[type="submit"] {
       width: 20%;
+      font-size: 1.2rem;
     }
   }
 
@@ -344,6 +353,10 @@ img {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       text-align: center;
+    }
+
+    i {
+      color: $main-color;
     }
   }
 
