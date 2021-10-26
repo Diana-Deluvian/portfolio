@@ -1,3 +1,43 @@
+.showcase {
+  display: flex;
+
+  img {
+    height: 30rem;
+    width: auto;
+  }
+
+  div {
+    border-left: 0.3rem solid $main-color;
+    margin-left: 1.5rem;
+    padding: 1.5rem;
+
+    text-align: left;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: white;
+      border-bottom: 2px solid $main-color;
+      display: inline-block;
+    }
+
+    #technologies {
+      margin: 1rem 0;
+    }
+  }
+}
+
+#work-a {
+  background-color: $light-color;
+  color: black;
+
+  .section-title {
+    color: black;
+  }
+}
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -6,7 +46,7 @@
 
 .project {
   position: relative;
-  background: $dark-color;
+  background: $main-color;
   overflow: hidden;
 
   &::after {
@@ -50,7 +90,8 @@
   &-image:before {
     content: "";
     display: block;
-    padding-top: 75%;
+    padding-top: 56.25%;
+    //aspect ratio, 9:16
     overflow: hidden;
   }
 
@@ -74,9 +115,10 @@
     z-index: 1;
     color: #fff;
     transform: translateY(-20%);
-    transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
-      transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
-    transition-delay: 300ms;
+    transition: opacity 900ms cubic-bezier(0.2, 1, 0.3, 1),
+      transform 900ms cubic-bezier(0.2, 1, 0.3, 1);
+    transition-delay: 100ms;
+    text-shadow: 1px 1px 2px black;
   }
 
   &-text-wrap {
@@ -95,7 +137,11 @@
   &-text-category {
     text-transform: uppercase;
     font-size: 1.2rem;
-    opacity: 0.7;
+    margin: 0;
+  }
+
+  &-text-description {
+    font-size: 1.2rem;
     margin: 0;
   }
 }
