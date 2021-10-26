@@ -149,8 +149,30 @@ img {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 1.5rem;
+
       text-align: center;
-      border-bottom: 20px solid transparent;
+
+      div {
+        margin-bottom: 20px;
+        transition: all 1s;
+      }
+
+      // the margin-bottom is so other elements don't get pushed by the enlarging icon
+
+      div:hover {
+        margin-bottom: 0px;
+
+        .process-icon {
+          background: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+
+          .process-step {
+            background-color: $dark-color;
+          }
+        }
+      }
 
       p {
         font-size: 1.2rem;
@@ -181,21 +203,6 @@ img {
         text-align: center;
         position: relative;
         transition: all 1s;
-
-        &:hover {
-          background: $main-color;
-          width: 90px;
-          height: 90px;
-          line-height: 90px;
-
-          .process-step {
-            background-color: $dark-color;
-          }
-
-          .process {
-            border: none;
-          }
-        }
       }
     }
   }
@@ -225,6 +232,9 @@ img {
   }
 
   &-b {
+    .container {
+      max-width: 80vw;
+    }
     .progress {
       overflow: hidden;
       height: 20px;
@@ -243,12 +253,13 @@ img {
 
   &-c {
     .about-logos {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 
       img {
-        width: 70%;
+        object-fit: contain;
+        max-width: 20%;
       }
     }
   }
@@ -261,6 +272,8 @@ img {
 
       p {
         text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
       }
 
       ul {
@@ -269,17 +282,16 @@ img {
         list-style: none;
         align-items: center;
         margin-top: 1rem;
+        text-align: center;
 
-        p {
-          padding: 0.5rem;
-          border: 1px solid $medium-color;
-          border-radius: 5px;
+        i {
+          color: $main-color;
+          margin-bottom: 0.5rem;
         }
 
-        img {
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
+        li {
+          padding: 0.5rem;
+          max-width: 80%;
         }
       }
     }

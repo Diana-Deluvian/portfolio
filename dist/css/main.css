@@ -260,8 +260,19 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5rem;
-    text-align: center;
-    border-bottom: 20px solid transparent; }
+    text-align: center; }
+    #home-c .process div {
+      margin-bottom: 20px;
+      transition: all 1s; }
+    #home-c .process div:hover {
+      margin-bottom: 0px; }
+      #home-c .process div:hover .process-icon {
+        background: #ffbc00;
+        width: 90px;
+        height: 90px;
+        line-height: 90px; }
+        #home-c .process div:hover .process-icon .process-step {
+          background-color: #333; }
     #home-c .process p {
       font-size: 1.2rem; }
     #home-c .process-step {
@@ -287,15 +298,6 @@ img {
       text-align: center;
       position: relative;
       transition: all 1s; }
-      #home-c .process-icon:hover {
-        background: #ffbc00;
-        width: 90px;
-        height: 90px;
-        line-height: 90px; }
-        #home-c .process-icon:hover .process-step {
-          background-color: #333; }
-        #home-c .process-icon:hover .process {
-          border: none; }
 
 #about-a {
   background-color: #333;
@@ -314,6 +316,9 @@ img {
       font-size: 1.4rem;
       margin-top: 1rem; }
 
+#about-b .container {
+  max-width: 80vw; }
+
 #about-b .progress {
   overflow: hidden;
   height: 20px;
@@ -327,32 +332,34 @@ img {
     background-color: #ffbc00; }
 
 #about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
   #about-c .about-logos img {
-    width: 70%; }
+    object-fit: contain;
+    max-width: 20%; }
 
 #about-d .trivia {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem; }
   #about-d .trivia p {
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
   #about-d .trivia ul {
     display: flex;
     flex-direction: column;
     list-style: none;
     align-items: center;
-    margin-top: 1rem; }
-    #about-d .trivia ul p {
+    margin-top: 1rem;
+    text-align: center; }
+    #about-d .trivia ul i {
+      color: #ffbc00;
+      margin-bottom: 0.5rem; }
+    #about-d .trivia ul li {
       padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 5px; }
-    #about-d .trivia ul img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%; }
+      max-width: 80%; }
 
 #contact-a .text-fields {
   display: grid;
