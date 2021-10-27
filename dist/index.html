@@ -16,7 +16,7 @@
             <nav id="main-nav">
                 <img id="logo" src="img/logo.png" alt="logo">
                 <ul>
-                    <li><a class="navigation" href="#" class="current">Home</a></li>
+                    <li><a class="navigation" href="#" >Home</a></li>
                     <li><a class="navigation" href="#" >About</a></li>
                     <li><a  class="navigation" href="#" >Work</a></li>
                     <li><a  class="navigation" href="#"  >Contact</a></li>
@@ -267,14 +267,13 @@
             <h2 class="section-title">Contact Information</h2>
             <div class="bottom-line"></div>
             <p class="lead">Here's how you can get in touch:</p>
-            <form>
+            <form id="tert" name="tert">
                 <div class="text-fields">
-                    <input type="text" class="text-input name-input" placeholder="Name">
-                    <input type="text" class="text-input subject-input" placeholder="Subject">
-                    <input type="text" class="text-input email-input" placeholder="Email Address">
-                    <input type="text" class="text-input phone-input" placeholder="Phone Number">
-                    <textarea class="text-input message-input" placeholder="Name"></textarea>
-
+                    <input id ="name" name="name" type="text" class="text-input name-input" placeholder="Name">
+                    <input  id ="subject" name="subject"type="text" class="text-input subject-input" placeholder="Subject">
+                    <input id="email" name="email"type="text" class="text-input email-input" placeholder="Email Address">
+                    <input id="phone" name="phone" type="text" class="text-input phone-input" placeholder="Phone Number">
+                    <textarea id="content" name="content" class="text-input message-input" placeholder="Message"></textarea>
                 </div>
                 <button type="submit" id="form-submit-button" class="btn-light">Submit</button>
             </form>

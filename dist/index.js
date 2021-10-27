@@ -37,3 +37,17 @@ function toggleCurrentClass(e) {
     
 }
 
+window.onload = () => {
+    navigation[0].classList.add("current");
+    navigate("home");
+}
+
+
+let formSubmitButton = document.getElementById("form-submit-button");
+formSubmitButton.onclick = e => {
+    e.preventDefault();
+    let data = Array.from(document.getElementsByTagName('input')).reduce((acc, input) => ({
+        ...acc, [input.id]: input.value}), {});
+    data.message = document.getElementsByTagName('textarea')[0].value;
+    //implement api and request functionality
+}
