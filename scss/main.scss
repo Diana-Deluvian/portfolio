@@ -69,32 +69,25 @@ img {
   }
 }
 // Header
-#header {
-  &-home {
-    background: $dark-color;
-    height: 100vh;
+header {
+  background: $dark-color;
+  height: 100vh;
 
-    .header-content {
-      text-align: center;
-      padding-top: 10%;
+  #home-content {
+    text-align: center;
+    padding-top: 10%;
 
-      h1 {
-        font-size: 4rem;
-        line-height: 1.2;
-      }
-
-      .arrows {
-        display: none;
-        color: $main-color;
-      }
+    h1 {
+      font-size: 4rem;
+      line-height: 1.2;
     }
   }
+}
 
-  &-inner {
-    background: $dark-color;
-    height: 5.5rem;
-    border-bottom: 3px solid $main-color;
-  }
+.inner {
+  background: $dark-color;
+  height: 5.5rem;
+  border-bottom: 3px solid $main-color;
 }
 
 #home {
@@ -141,8 +134,32 @@ img {
       }
     }
   }
+}
 
-  &-c {
+#about {
+  &-general {
+    background-color: $dark-color;
+    color: $light-color;
+    .about-info {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 1.2rem;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        max-width: 60%;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      h4 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &-approach {
     background-color: $light-color;
     color: black;
     .process {
@@ -206,32 +223,8 @@ img {
       }
     }
   }
-}
 
-#about {
-  &-a {
-    background-color: $dark-color;
-    color: $light-color;
-    .about-info {
-      display: flex;
-      flex-direction: column;
-      grid-gap: 1.2rem;
-      justify-content: center;
-      align-items: center;
-
-      p {
-        max-width: 60%;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-      }
-      h4 {
-        font-size: 1.4rem;
-        margin-top: 1rem;
-      }
-    }
-  }
-
-  &-b {
+  &-skills {
     .container {
       max-width: 80vw;
     }
@@ -251,7 +244,7 @@ img {
     }
   }
 
-  &-c {
+  &-logos {
     .about-logos {
       display: flex;
       justify-content: space-around;
@@ -264,7 +257,7 @@ img {
     }
   }
 
-  &-d {
+  &-trivia {
     .trivia {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -299,7 +292,7 @@ img {
 }
 
 #contact {
-  &-a {
+  &-form {
     .container {
       max-width: 80%;
     }
@@ -348,7 +341,7 @@ img {
     }
   }
 
-  &-b {
+  &-info {
     .container {
       max-width: 80%;
     }
@@ -361,13 +354,6 @@ img {
 
     i {
       color: $main-color;
-    }
-  }
-
-  &-c {
-    h1 {
-      text-align: center;
-      font-size: 4rem;
     }
   }
 }

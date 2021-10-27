@@ -11,32 +11,28 @@
     <title>Diana Deluvian</title>
 </head>
 <body>
-    <header id="header-home">
+    <header>
         <div class="container">
             <nav id="main-nav">
                 <img id="logo" src="img/logo.png" alt="logo">
                 <ul>
-                    <li><a href="index.html" class="current">Home</a></li>
-                    <li><a href="about.html" >About</a></li>
-                    <li><a href="projects.html" >Projects</a></li>
-                    <li><a href="contact.html" >Contact</a></li>
+                    <li><a class="navigation" href="#" class="current">Home</a></li>
+                    <li><a class="navigation" href="#" >About</a></li>
+                    <li><a  class="navigation" href="#" >Work</a></li>
+                    <li><a  class="navigation" href="#"  >Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-content">
+            <section id="home-content">
                 <h1>Diana Deluvian</h1>
                 <h2>Full Stack Developer</h2>
                 <p class="lead">I specialize in MERN applications</p>
-                <a href="work.html" class="btn-light">View my work</a>
-
-
-                        <div class="arrows"><i class="fas fa-angle-double-down fa-4x"></i>
-                        </div>
-
-            </div>
+                <a href="#" id="to-projects" class="btn-light">View my work</a>
+            </section>
         </div>
     </header>
 
-    <section id="about-a" class=" text-center">
+
+    <section id="about-general" class="py-2 text-center">
         <div class="container">
             <h2 class="section-title">About me</h2>
             <div class="bottom-line"></div>
@@ -66,7 +62,7 @@
     </section>
 
 
-    <section id="home-c" class="py-2 text-center">
+    <section id="about-approach" class="py-2 text-center">
         <div class="container">
             <h2 class="section-title">workflow</h2>
             <div class="bottom-line"></div>
@@ -111,7 +107,7 @@
     </div>
     </section>
 
-    <section id="about-b" class="bg-dark py-2">
+    <section id="about-skills" class="bg-dark py-2">
         <div class="container">
                 <h2 class="section-title">Technical skills</h2>
                 <div class="bottom-line"></div>
@@ -143,7 +139,7 @@
         </div>
     </section>
 
-    <section id="about-c" class="py-4 bg-light">
+    <section id="about-logos" class="py-4 bg-light">
         <div class="container">
             <div class="about-logos">
                 <img src="logos/react.png" alt="React" title="React">
@@ -155,7 +151,7 @@
         </div>
     </section>
 
-    <section id="about-d" class="py-4">
+    <section id="about-trivia" class="py-4">
         <div class="container">
             <h2 class="section-title">Hobbies & Trivia</h2>
             <div class="bottom-line"></div>
@@ -196,7 +192,7 @@
         </div>
     </section>
 
-    <section id="work-b" class="text-center py-3">
+    <section id="work-showcase" class="text-center py-3">
         <div class="container">
             <h2 class="section-title">Project Showcase:</h2>
             <div class="bottom-line"></div>
@@ -217,7 +213,7 @@
         </div>
     </section>
 
-    <section id="work-a" class="text-center py-3">
+    <section id="work-projects" class="text-center py-3">
         <div class="container">
             <h2 class="section-title">Other projects</h2>
             <div class="bottom-line"></div>
@@ -266,7 +262,7 @@
         </div>
     </section>
 
-    <section id="contact-a" class="text-center py-3">
+    <section id="contact-form" class="text-center py-3">
         <div class="container">
             <h2 class="section-title">Contact Information</h2>
             <div class="bottom-line"></div>
@@ -280,12 +276,12 @@
                     <textarea class="text-input message-input" placeholder="Name"></textarea>
 
                 </div>
-                <button type="submit" class="btn-light">Submit</button>
+                <button type="submit" id="form-submit-button" class="btn-light">Submit</button>
             </form>
         </div>
     </section>
 
-    <section id="contact-b" class="py-3 bg-dark">
+    <section id="contact-info" class="py-3 bg-dark">
         <div class="container">
             <div class="contact-info">
                 <div>
