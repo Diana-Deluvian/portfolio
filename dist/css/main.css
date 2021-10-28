@@ -225,6 +225,13 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem; }
+  #main-nav #logo {
+    align-self: center;
+    height: 3rem;
+    width: auto;
+    max-width: 30%; }
+    #main-nav #logo:hover {
+      cursor: pointer; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -453,13 +460,17 @@ header {
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
 
+@media (min-width: 1600px) {
+  :root {
+    font-size: 24px; } }
+
 @media (min-width: 800px) {
   #showcase-image {
-    content: url("../img/project-placeholder.png"); }
+    content: url("../img/projects/project-placeholder.png"); }
   #project-image1,
   #project-image2,
   #project-image3 {
-    content: url("../img/project-placeholder.png"); } }
+    content: url("../img/projects/project-placeholder.png"); } }
 
 @media (max-width: 800px) {
   #header-home {
@@ -467,13 +478,13 @@ header {
     #header-home #home-content {
       padding-top: 5rem; }
   #showcase-image {
-    content: url("../img/project-placeholder4-3.png");
+    content: url("../img/projects/project-placeholder4-3.png");
     max-width: 60%;
     max-height: 45%; }
   #project-image1,
   #project-image2,
   #project-image3 {
-    content: url("../img/project-placeholder4-3.png"); } }
+    content: url("../img/projects/project-placeholder4-3.png"); } }
 
 @media (max-width: 700px) {
   #main-nav {
@@ -497,14 +508,18 @@ header {
     padding: 2rem 0 1rem 0; }
   #about-general .about-info p {
     max-width: 90%; }
-  #about-logos {
-    display: none; }
+  #about-logos .about-logos {
+    flex-wrap: wrap; }
+    #about-logos .about-logos img {
+      max-width: 40%;
+      height: auto;
+      object-fit: cover; }
   .showcase {
     flex-direction: column; }
     .showcase div {
       border-left: none; }
     .showcase #showcase-image {
-      content: url("../img/project-placeholder9-16.png");
+      content: url("../img/projects/project-placeholder9-16.png");
       max-width: 100%;
       border: 5px solid black; }
   #contact-form .text-fields {
@@ -537,13 +552,13 @@ header {
 
 @media (max-aspect-ratio: 4 / 3) {
   #showcase-image {
-    content: url("../img/project-placeholder4-3.png");
+    content: url("../img/projects/project-placeholder4-3.png");
     max-width: 60%;
     max-height: 45%; }
   #project-image1,
   #project-image2,
   #project-image3 {
-    content: url("../img/project-placeholder4-3.png"); }
+    content: url("../img/projects/project-placeholder4-3.png"); }
   .project-image:before {
     content: "";
     display: block;

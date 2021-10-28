@@ -13,8 +13,17 @@ navigation.forEach(element => element.onclick = e => {
 });
 
 let toWorkButton = document.getElementById("to-projects");
-toWorkButton.onclick = (e) => {toggleCurrentClass();
-    navigate("work", e)}
+toWorkButton.onclick = (e) => {
+    toggleCurrentClass();
+    navigate("work", e)
+}
+
+let toHome = document.getElementById("logo");
+toHome.onclick = (e) => {
+    navigation.forEach(element => element.classList.remove("current"));
+    navigation[0].classList.add("current");
+    navigate("home", e)
+}
 
 function navigate(selector, e) {
     sections.forEach(element => element.style.display = "none");
@@ -22,8 +31,7 @@ function navigate(selector, e) {
     if(selector === 'home') {
         header.classList.remove("inner");
     }
-    else {
-        
+    else {   
         header.classList.add("inner");
     }
 }
