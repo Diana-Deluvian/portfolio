@@ -1,15 +1,33 @@
 .showcase {
   display: flex;
 
-  img {
+  /*img {
     display: block;
     max-height: 33.75%;
     max-width: 60%;
     width: auto;
     height: auto;
+  }*/
+  #work-project-wrap {
+    display: block;
+    min-height: 75vh;
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+  }
+  #work-frame {
+    background-color: white;
+    width: 125%;
+    height: 125%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: 0 0;
   }
 
-  div {
+  #work-information {
     border-left: 0.3rem solid $main-color;
     margin-left: 1.5rem;
     padding: 1.5rem;
@@ -53,7 +71,7 @@
   overflow: hidden;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     background: inherit;
@@ -92,7 +110,7 @@
   }
 
   &-image:before {
-    content: "";
+    content: '';
     display: block;
     padding-top: 56.25%;
     //aspect ratio, 16:9

@@ -1,6 +1,6 @@
-@import "config";
-@import "utilities";
-@import "project_grid";
+@import 'config';
+@import 'utilities';
+@import 'project_grid';
 
 // General styles
 
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   background-color: $dark-color;
   color: white;
@@ -34,8 +34,6 @@ h4 {
 img {
   width: 100%;
 }
-
-// Main Nav
 
 #main-nav {
   display: flex;
@@ -307,9 +305,9 @@ header {
     .text-fields {
       display: grid;
       grid-template-areas:
-        "name subject"
-        "email phone"
-        "message message";
+        'name subject'
+        'email phone'
+        'message message';
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -344,7 +342,7 @@ header {
         padding: 0.5rem 1rem;
       }
     }
-    button[type="submit"] {
+    button[type='submit'] {
       font-size: 1.2rem;
     }
   }
@@ -398,4 +396,4 @@ header {
   }
 }
 
-@import "media";
+@import 'media';

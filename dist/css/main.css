@@ -91,26 +91,43 @@ input[class^="btn-"]:hover {
   margin: 0 auto 1rem auto; }
 
 .showcase {
-  display: flex; }
-  .showcase img {
+  display: flex;
+  /*img {
     display: block;
     max-height: 33.75%;
     max-width: 60%;
     width: auto;
-    height: auto; }
-  .showcase div {
+    height: auto;
+  }*/ }
+  .showcase #work-project-wrap {
+    display: block;
+    min-height: 75vh;
+    width: 150%;
+    display: flex;
+    flex-direction: column; }
+  .showcase #work-frame {
+    background-color: white;
+    width: 125%;
+    height: 125%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: 0 0; }
+  .showcase #work-information {
     border-left: 0.3rem solid #ffbc00;
     margin-left: 1.5rem;
     padding: 1.5rem;
     text-align: left; }
-    .showcase div h3 {
+    .showcase #work-information h3 {
       text-align: center;
       margin-bottom: 1rem; }
-    .showcase div a {
+    .showcase #work-information a {
       color: white;
       border-bottom: 2px solid #ffbc00;
       display: inline-block; }
-    .showcase div #technologies {
+    .showcase #work-information #technologies {
       margin: 1rem 0; }
 
 #work-projects {
@@ -129,7 +146,7 @@ input[class^="btn-"]:hover {
   background: #ffbc00;
   overflow: hidden; }
   .project::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     background: inherit;
@@ -155,7 +172,7 @@ input[class^="btn-"]:hover {
     display: block;
     transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1); }
   .project-image:before {
-    content: "";
+    content: '';
     display: block;
     padding-top: 56.25%;
     overflow: hidden; }
@@ -201,7 +218,7 @@ input[class^="btn-"]:hover {
   padding: 0; }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   background-color: #333;
   color: white; }
@@ -402,7 +419,7 @@ header {
 
 #contact-form .text-fields {
   display: grid;
-  grid-template-areas: "name subject" "email phone" "message message";
+  grid-template-areas: 'name subject' 'email phone' 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-form .text-fields input,
@@ -423,7 +440,7 @@ header {
   #contact-form .text-fields .text-input {
     padding: 0.5rem 1rem; }
 
-#contact-form button[type="submit"] {
+#contact-form button[type='submit'] {
   font-size: 1.2rem; }
 
 #contact-info {
@@ -462,7 +479,9 @@ header {
 
 @media (min-width: 1600px) {
   :root {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .container {
+    max-width: 1440px; } }
 
 @media (min-width: 800px) {
   #showcase-image {
@@ -516,14 +535,24 @@ header {
       object-fit: cover; }
   .showcase {
     flex-direction: column; }
-    .showcase div {
+    .showcase #work-information {
       border-left: none; }
+    .showcase #work-project-wrap {
+      display: block;
+      min-height: 75vh;
+      max-height: 75vh;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+    .showcase #work-frame {
+      flex-grow: 1;
+      height: 92.5vh; }
     .showcase #showcase-image {
       content: url("../img/projects/project-placeholder9-16.png");
-      max-width: 100%;
-      border: 5px solid black; }
+      max-width: 100%; }
   #contact-form .text-fields {
-    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
   #contact-info .contact-info {
     margin-bottom: -3rem;
     grid-template-columns: repeat(1, 1fr); }
@@ -560,7 +589,7 @@ header {
   #project-image3 {
     content: url("../img/projects/project-placeholder4-3.png"); }
   .project-image:before {
-    content: "";
+    content: '';
     display: block;
     padding-top: 75%;
     overflow: hidden; } }
