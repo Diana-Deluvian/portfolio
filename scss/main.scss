@@ -396,4 +396,13 @@ header {
   }
 }
 
+textarea:focus,
+input:focus,
+input[type]:focus,
+.uneditable-input:focus {
+  border-color: $main-color;
+  box-shadow: 1px 1px 8px -3px $main-color;
+  outline: 0 none;
+}
+
 @import 'media';

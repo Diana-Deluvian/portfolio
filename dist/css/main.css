@@ -477,6 +477,14 @@ header {
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
 
+textarea:focus,
+input:focus,
+input[type]:focus,
+.uneditable-input:focus {
+  border-color: #ffbc00;
+  box-shadow: 1px 1px 8px -3px #ffbc00;
+  outline: 0 none; }
+
 @media (min-width: 1600px) {
   :root {
     font-size: 24px; }
