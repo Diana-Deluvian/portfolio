@@ -344,6 +344,15 @@ header {
     }
     button[type='submit'] {
       font-size: 1.2rem;
+      width: 12rem;
+    }
+    #form-status {
+      max-width: 60ch;
+      margin: 2rem auto;
+      font-size: 1.5rem;
+    }
+    .form-status-error {
+      color: red;
     }
   }
 

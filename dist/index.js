@@ -51,11 +51,41 @@ window.onload = () => {
 }
 
 
-let formSubmitButton = document.getElementById("form-submit-button");
-formSubmitButton.onclick = e => {
+const formSubmitButton = document.getElementById("form-submit-button");
+const formStatus = document.querySelector('#form-status');
+formSubmitButton.onclick = async e => {
     e.preventDefault();
-    let data = Array.from(document.getElementsByTagName('input')).reduce((acc, input) => ({
+    formSubmitButton.textContent = "Submitting...";
+    formSubmitButton.disabled = true;
+    const data = Array.from(document.getElementsByTagName('input')).reduce((acc, input) => ({
         ...acc, [input.id]: input.value}), {});
     data.message = document.getElementsByTagName('textarea')[0].value;
-    //implement api and request functionality
+    try {
+    const res = await fetch('https://dianas-portfolio-api.herokuapp.com/sendMail', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(data),
+    });
+    
+    if(res.status === 200) {
+        document.querySelector('form').reset();
+        formStatus.textContent = "Message sent. I will get back to you as soon as possible."
+        formStatus.classList.remove("form-status-error");
+        formSubmitButton.textContent = "Submit";
+    formSubmitButton.disabled = false;
+    }
+    else {
+        formStatus.textContent = "You done messed up ey-ey-run";
+        formStatus.classList.add("form-status-error");
+        formSubmitButton.textContent = "Submit";
+    formSubmitButton.disabled = false;
+    }
 }
+catch {
+    formStatus.textContent = "There appears to be an error with the server. Please try again later or send your message the old fashioned way to diana.deluvian@gmail.com";
+    formStatus.classList.add("form-status-error");
+    formSubmitButton.textContent = "Submit";
+    formSubmitButton.disabled = false;
+}
+
+  }
