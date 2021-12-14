@@ -212,6 +212,12 @@ input[class^="btn-"]:hover {
   .project-text-description {
     font-size: 1.2rem;
     margin: 0; }
+  .project-text-link {
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    border-bottom: 1px solid white; }
 
 * {
   margin: 0;
@@ -491,27 +497,33 @@ input[type]:focus,
   .container {
     max-width: 1440px; } }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   #showcase-image {
     content: url("../img/projects/project-placeholder.png"); }
-  #project-image1,
-  #project-image2,
+  #project-image1 {
+    content: url("../img/projects/30k1k.png"); }
+  #project-image2 {
+    content: url("../img/projects/project-placeholder.png"); }
   #project-image3 {
-    content: url("../img/projects/project-placeholder.png"); } }
+    content: url("../img/projects/portfolio.png"); } }
+
+@media (max-width: 1000px) {
+  #showcase-image {
+    content: url("../img/projects/project-placeholder4-3.png");
+    max-width: 60%;
+    max-height: 45%; }
+  #project-image1 {
+    content: url("../img/projects/30k1k4-3.png"); }
+  #project-image2 {
+    content: url("../img/projects/project-placeholder4-3.png"); }
+  #project-image3 {
+    content: url("../img/projects/portfolio4-3.png"); } }
 
 @media (max-width: 800px) {
   #header-home {
     height: 100vh; }
     #header-home #home-content {
-      padding-top: 5rem; }
-  #showcase-image {
-    content: url("../img/projects/project-placeholder4-3.png");
-    max-width: 60%;
-    max-height: 45%; }
-  #project-image1,
-  #project-image2,
-  #project-image3 {
-    content: url("../img/projects/project-placeholder4-3.png"); } }
+      padding-top: 5rem; } }
 
 @media (max-width: 700px) {
   #main-nav {
@@ -592,10 +604,12 @@ input[type]:focus,
     content: url("../img/projects/project-placeholder4-3.png");
     max-width: 60%;
     max-height: 45%; }
-  #project-image1,
-  #project-image2,
-  #project-image3 {
+  #project-image1 {
+    content: url("../img/projects/30k1k4-3.png"); }
+  #project-image2 {
     content: url("../img/projects/project-placeholder4-3.png"); }
+  #project-image3 {
+    content: url("../img/projects/portfolio4-3.png"); }
   .project-image:before {
     content: '';
     display: block;

@@ -166,4 +166,12 @@
     font-size: 1.2rem;
     margin: 0;
   }
+
+  &-text-link {
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    border-bottom: 1px solid white;
+  }
 }
