@@ -419,6 +419,9 @@ header {
     #about-trivia .trivia ul li {
       padding: 0.5rem;
       max-width: 80%; }
+    #about-trivia .trivia ul a {
+      color: white;
+      text-decoration: underline white; }
 
 #contact-form .container {
   max-width: 80%; }
