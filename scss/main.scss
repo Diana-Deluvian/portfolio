@@ -325,21 +325,42 @@ header {
         grid-area: subject;
       }
 
-      .email-input {
+      #email-wrapper {
         grid-area: email;
+        border: 1px solid black;
+        padding: 0;
+        position: relative;
+      }
+
+      .email-input {
+        padding: 0.5rem 1rem;
+        width: 100%;
+        box-sizing: border-box;
       }
 
       .phone-input {
         grid-area: phone;
       }
 
-      .message-input {
+      #content-wrapper {
         grid-area: message;
-        height: 6rem;
+        position: relative;
+      }
+
+      .message-input {
+        height: 8rem;
+        width: 100%;
+        box-sizing: border-box;
+        resize: vertical;
       }
 
       .text-input {
         padding: 0.5rem 1rem;
+      }
+      .form-required {
+        color: red;
+        position: absolute;
+        right: 0.4rem;
       }
     }
     button[type='submit'] {

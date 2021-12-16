@@ -286,9 +286,17 @@
                 <div class="text-fields">
                     <input id ="name" name="name" type="text" class="text-input name-input" placeholder="Name">
                     <input  id ="subject" name="subject"type="text" class="text-input subject-input" placeholder="Subject">
-                    <input id="email" name="email"type="text" class="text-input email-input" placeholder="Email Address">
+                    <div id="email-wrapper">
+                        <input id="email" name="email" type="email" required class="text-input email-input required" placeholder="Email Address">
+                        <span class="form-required">*</span>
+                    </div>
+                    
                     <input id="phone" name="phone" type="text" class="text-input phone-input" placeholder="Phone Number">
-                    <textarea id="content" name="content" class="text-input message-input" placeholder="Message"></textarea>
+                    <div id="content-wrapper">
+                        <textarea onKeyPress="hasScrollbar()" oninput="hasScrollbar()" id="content" name="content" required class="text-input message-input required" placeholder="Message"></textarea>
+                        <span class="form-required">*</span>
+                    </div>
+                    
                 </div>
                 <button type="submit" id="form-submit-button" class="btn-light">Submit</button>
                 <p id="form-status"></p>

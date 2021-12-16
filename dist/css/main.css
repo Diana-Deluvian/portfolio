@@ -436,15 +436,31 @@ header {
     grid-area: name; }
   #contact-form .text-fields .subject-input {
     grid-area: subject; }
+  #contact-form .text-fields #email-wrapper {
+    grid-area: email;
+    border: 1px solid black;
+    padding: 0;
+    position: relative; }
   #contact-form .text-fields .email-input {
-    grid-area: email; }
+    padding: 0.5rem 1rem;
+    width: 100%;
+    box-sizing: border-box; }
   #contact-form .text-fields .phone-input {
     grid-area: phone; }
-  #contact-form .text-fields .message-input {
+  #contact-form .text-fields #content-wrapper {
     grid-area: message;
-    height: 6rem; }
+    position: relative; }
+  #contact-form .text-fields .message-input {
+    height: 8rem;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical; }
   #contact-form .text-fields .text-input {
     padding: 0.5rem 1rem; }
+  #contact-form .text-fields .form-required {
+    color: red;
+    position: absolute;
+    right: 0.4rem; }
 
 #contact-form button[type='submit'] {
   font-size: 1.2rem;
