@@ -231,7 +231,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #333;
+  cursor: pointer; }
 
 ul {
   list-style: none; }
@@ -507,7 +508,8 @@ header {
       width: 20px;
       line-height: 20px;
       text-align: center;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      color: white; }
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
 

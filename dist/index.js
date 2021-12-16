@@ -45,10 +45,10 @@ function toggleCurrentClass(e) {
     
 }
 
-window.onload = () => {
-    navigation[0].classList.add("current");
-    navigate("home");
-}
+navigation[0].classList.add("current");
+navigate("home");
+
+
 
 const elem = document.getElementById('content');
 const contentRequiredStar = document.querySelectorAll('.form-required')[1];
