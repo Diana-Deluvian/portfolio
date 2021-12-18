@@ -442,7 +442,6 @@ header {
     grid-area: subject; }
   #contact-form .text-fields #email-wrapper {
     grid-area: email;
-    border: 1px solid black;
     padding: 0;
     position: relative; }
   #contact-form .text-fields .email-input {
