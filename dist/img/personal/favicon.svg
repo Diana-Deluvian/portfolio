@@ -7,41 +7,12 @@
    viewBox="0 0 32.0 32.0"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="favicon8.svg"
-   inkscape:version="1.1.1 (3bf5ae0, 2021-09-20)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview110039"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="px"
-     showgrid="true"
-     inkscape:zoom="7.3833894"
-     inkscape:cx="20.315873"
-     inkscape:cy="15.643222"
-     inkscape:window-width="1366"
-     inkscape:window-height="703"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer3">
-    <inkscape:grid
-       type="xygrid"
-       id="grid110045" />
-  </sodipodi:namedview>
   <defs
      id="defs110034" />
   <g
-     inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Layer 2"
      style="display:inline">
     <rect
        style="fill:#333333;fill-opacity:1;stroke-width:1.06905"
@@ -51,16 +22,13 @@
        x="0"
        y="-35"
        transform="scale(1,-1)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;line-height:1.25;font-family:'Linux Biolinum Keyboard O';-inkscape-font-specification:'Linux Biolinum Keyboard O';fill:#ffbc00;fill-opacity:1;stroke:none"
-       x="-0.79873842"
-       y="26.972551"
-       id="text232912"><tspan
-         sodipodi:role="line"
-         id="tspan232910"
-         x="-0.79873842"
-         y="26.972551"
-         style="font-size:29.3333px;fill:#ffbc00;fill-opacity:1">D</tspan></text>
+    <g
+       aria-label="D"
+       id="text232912"
+       style="font-size:29.3333px;line-height:1.25;font-family:'Linux Biolinum Keyboard O';-inkscape-font-specification:'Linux Biolinum Keyboard O';fill:#ffbc00">
+      <path
+         d="M 11.315914,23.775222 V 13.567233 c 0,-0.762665 0.762666,-0.879999 1.847998,-0.879999 4.751995,0 5.719994,3.46133 5.719994,6.834659 0,4.458662 -2.082665,5.133328 -5.162661,5.133328 -2.170664,0 -2.405331,-0.176 -2.405331,-0.879999 z M 9.9079159,11.601902 c -0.7626657,0 -1.5839981,-0.088 -1.5839981,-0.088 l -0.058667,0.088 c 0.1759998,1.231999 0.2346664,2.727997 0.2346664,4.399995 v 5.367994 c 0,1.671998 -0.058667,3.226663 -0.2346664,4.399995 l 0.029333,0.088 c 0,0 0.8506657,-0.088 1.6133314,-0.088 1.7599978,0 2.2293308,0.05867 4.4879948,0.05867 3.10933,0 7.685324,-1.407999 7.685324,-6.834659 0,-4.077329 -3.871995,-7.479992 -8.09599,-7.479992 -1.583999,0 -2.463998,0.088 -4.0773288,0.088 z M 6.5052532,5.9112422 H 23.283901 c 1.759998,0 2.434663,0.9679989 2.434663,2.7279969 V 28.527216 c 0,1.759998 -0.674665,2.434664 -2.434663,2.434664 H 6.5052532 c -1.759998,0 -2.7279969,-0.674666 -2.7279969,-2.434664 V 8.6392391 c 0,-1.759998 0.9679989,-2.7279969 2.7279969,-2.7279969 z M 28.534561,29.436549 V 8.6392391 c 0,-2.639997 -1.730664,-3.7839957 -4.370661,-3.7839957 H 6.5052532 c -2.3759973,0 -3.7839957,1.3493318 -3.7839957,3.7839957 V 29.436549 c 0,2.639996 1.1439987,3.754662 3.7839957,3.754662 H 25.043899 c 2.639997,0 3.490662,-1.114666 3.490662,-3.754662 z"
+         id="path27702" />
+    </g>
   </g>
 </svg>
