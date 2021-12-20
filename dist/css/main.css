@@ -457,7 +457,8 @@ header {
     height: 8rem;
     width: 100%;
     box-sizing: border-box;
-    resize: vertical; }
+    resize: vertical;
+    font-family: 'Ubuntu'; }
   #contact-form .text-fields .text-input {
     padding: 0.5rem 1rem; }
   #contact-form .text-fields .form-required {
@@ -523,6 +524,14 @@ input[type]:focus,
 @media (min-width: 1600px) {
   :root {
     font-size: 24px; }
+  #about-approach {
+    font-size: 16px; }
+    #about-approach .process p {
+      font-size: 0.8rem; }
+    #about-approach .process-icon {
+      padding: 1.5rem; }
+    #about-approach .process-step {
+      padding: 0.66rem; }
   .container {
     max-width: 1440px; } }
 

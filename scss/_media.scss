@@ -2,6 +2,22 @@
   :root {
     font-size: 24px;
   }
+
+  #about-approach {
+    font-size: 16px;
+
+    .process {
+      p {
+        font-size: 0.8rem;
+      }
+      &-icon {
+        padding: 1.5rem;
+      }
+      &-step {
+        padding: 0.66rem;
+      }
+    }
+  }
   .container {
     max-width: 1440px;
   }
